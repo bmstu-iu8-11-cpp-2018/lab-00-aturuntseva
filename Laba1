@@ -1,15 +1,117 @@
-#include "stdafx.h"
 #include <iostream>
+#include <cmath>
 #include <string>
+#define _USE_MATH_DEFINES
 int main()
 {
-	std::cout << "1" << " " << "13" << " " << "49";
-	char i;
-	std::cin >> i;
-	std::cout << "1" << i << "13" << i << "49";
-	int a, b, c;
-	std::cin >> a >> b >> c;
-	std::cout << a << "  " << b << "  " << c;
-
+    std::cout << "1" << " " << "13" << " " << "49";
+    
+    
+    char i;
+    std::cin >> i;
+    std::cout << "1" << i << "13" << i << "49";
+    
+    
+    int a1, b1, c1;
+    std::cin >> a1 >> b1 >> c1;
+    std::cout << a1 << "  " << b1 << "  " << c1;
+	
+	
+	double a2, x, b2, y3;
+    std::cout << "a2 = ";
+    std:: cin >> a2;
+    x = 12 * pow(a2, 2) + 7 * a2 - 12;
+    std::cout << "x = " << x;
+    std::cout << "\nb2 = ";
+    std::cin >> b2;
+    y3 = 3 * pow( b2 , 3) + 4 * pow(b2 , 2) - 11 * b2 + 1;
+    std::cout << "y3 = " << y3;
+	
+	
+    double p3, m3, V3;
+    std::cout << "m3 = ";
+    std::cin >> m3;
+    std::cout << "V3 = ";
+    std::cin >> V3;
+    p3 = m3 / V3;
+    std::cout << "p3 = " << p3;
+	
+	
+	double  a4 , b4 , x4;
+    std::cout << "a4 = ";
+    std::cin >> a4;
+    std::cout << "b4 = ";
+    std::cin >> b4;
+    if ( a4 == 0 )
+    std::cout << "\nNo roots";
+    else {
+    double x4 = - b4 / a4;
+    std::cout << "\nx4 = " << x4;
+    }
+	
+	
+    int x1, x2, y1, y2, D1;
+    std::cout << "x1 = ";
+    std::cin >> x1;
+    std::cout << "x2 = ";
+    std::cin >> x2;
+    std::cout << "y1 = ";
+    std::cin >> y1;
+    std::cout << "y2 = ";
+    std::cin >> y2;
+    D1 = sqrt((pow((x1 - x2) , 2) + pow((y1 - y2) , 2)));
+    std::cout << "D1 = " << D1;
+	
+	
+    double a6, b6, c6, d, P, H;
+    std::cout << "a6 = ";
+    std::cin >> a6;
+    std::cout << "b6 = ";
+    std::cin >> b6;
+    std::cout << "H = ";
+    std::cin >> H;
+    d = (b6 - a6) / 2;
+    c6 = sqrt(H*H + d*d);
+    P = 2 * c6 + a6 + b6;
+    std::cout << "P = " << P;
+	
+	
+    double S1, R, r;
+    std::cout << "R = ";
+    std::cin >> R;
+    std::cout << "r = ";
+    std::cin >> r;
+    S1 = M_PI*( pow ( R , 2 ) - pow ( r , 2 ));
+    std::cout << "S1 = " << S1;
+	
+	
+    int a , V , S;
+    std::cout << "a = ";
+    std::cin >> a;
+    S = 4 * pow( a , 2 );
+    std::cout << "S = " << S;
+    V = pow ( a , 3 );
+    std::cout << "\nV = " << V;
+	
+    
+    int a5, P1;
+    std::cout << "a5 = ";
+    std::cin >> a5;
+    P1 = 4 * a5;
+    std::cout << "P1 = " << P1;
+    
+    
+    int r1 , D;
+    std::cout << "r1 = ";
+    std::cin >> r1;
+    D = 2 * r1;
+    std::cout << "D = " << D;
+    
+    
+    char name[10];
+    std::cout << "Enter name";
+    std::cin >> name;
+    std::cout << "Hello, "<<name<<"! My name is C++.";
+   
 return 0;
 }
