@@ -17,7 +17,7 @@ int main()
     std::cout << a1 << "  " << b1 << "  " << c1;
 	
 	
-	double a2, x, b2, y3;
+    double a2, x, b2, y3;
     std::cout << "a2 = ";
     std:: cin >> a2;
     x = 12 * pow(a2, 2) + 7 * a2 - 12;
@@ -37,7 +37,7 @@ int main()
     std::cout << "p3 = " << p3;
 	
 	
-	double  a4 , b4 , x4;
+    double  a4 , b4 , x4;
     std::cout << "a4 = ";
     std::cin >> a4;
     std::cout << "b4 = ";
@@ -113,5 +113,5 @@ int main()
     std::cin >> name;
     std::cout << "Hello, "<<name<<"! My name is C++.";
    
-return 0;
+    return 0;
 }
